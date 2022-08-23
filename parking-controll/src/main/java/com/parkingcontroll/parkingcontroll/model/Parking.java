@@ -1,9 +1,13 @@
 package com.parkingcontroll.parkingcontroll.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.time.LocalDateTime;
 
+@Entity
 public class Parking {
 
+    @Id
     private String id;
     private String license;
     private String state;
